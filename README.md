@@ -2,6 +2,7 @@
 [image2]: imgs/Screenshot_2.jpg "Architecture"
 [image3]: imgs/Screenshot_3.jpg "Architecture"
 [image4]: imgs/Screenshot_4.jpg "Architecture"
+[image5]: imgs/Screenshot_5.jpg "Simulator"
 
 #### System Architecture Diagram
 
@@ -33,3 +34,6 @@ This package contains the waypoint updater node: waypoint_updater.py. The purpos
 Carla is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, and steering have electronic control. This package contains the files that are responsible for control of the vehicle: the node dbw_node.py and the file twist_controller.py, along with a pid and lowpass filter that you can use in your implementation. The dbw_node subscribes to the /current_velocity topic along with the /twist_cmd topic to receive target linear and angular velocities. Additionally, this node will subscribe to /vehicle/dbw_enabled, which indicates if the car is under dbw or driver control. This node will publish throttle, brake, and steering commands to the /vehicle/throttle_cmd, /vehicle/brake_cmd, and /vehicle/steering_cmd topics.
 
 ![alt text][image4] 
+
+#### A highway test track with traffic lights
+![alt text][image5] 
